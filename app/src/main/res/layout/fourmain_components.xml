@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center"
+    android:padding="16dp"
+    android:background="#E7F1EE"> <!-- Light green background -->
+
+    <!-- Student Icon -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/icon_student"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/student"
+            android:padding="8dp"
+        android:background="@drawable/icon_background"
+        android:contentDescription="Student" />
+
+        <TextView
+            android:id="@+id/label_student"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Student"
+            android:textColor="#2D5A4F"
+            android:textSize="14sp"
+            android:paddingTop="8dp"
+            android:textAlignment="center" />
+    </LinearLayout>
+
+    <!-- Graduate Icon -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/icon_graduate"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:padding="8dp"
+            android:src="@drawable/graduation_icon"
+            android:background="@drawable/icon_background"
+            android:contentDescription="Graduate" />
+
+        <TextView
+            android:id="@+id/label_graduate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Graduate"
+            android:textColor="#2D5A4F"
+            android:textSize="14sp"
+            android:paddingTop="8dp"
+            android:textAlignment="center" />
+    </LinearLayout>
+
+    <!-- Professional Icon -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/icon_professional"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:padding="8dp"
+            android:src="@drawable/professional"
+            android:background="@drawable/icon_background"
+        android:contentDescription="Professional" />
+
+        <TextView
+            android:id="@+id/label_professional"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Professional"
+            android:textColor="#2D5A4F"
+            android:textSize="14sp"
+            android:paddingTop="8dp"
+            android:textAlignment="center" />
+    </LinearLayout>
+
+    <!-- Entrepreneur Icon -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/icon_entrepreneur"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:padding="8dp"
+            android:src="@drawable/entrepreneur_icon"
+            android:background="@drawable/icon_background"
+            android:contentDescription="Entrepreneur" />
+
+        <TextView
+            android:id="@+id/label_entrepreneur"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Entrepreneur"
+            android:textColor="#2D5A4F"
+            android:textSize="14sp"
+            android:paddingTop="8dp"
+            android:textAlignment="center" />
+    </LinearLayout>
+
+</LinearLayout>

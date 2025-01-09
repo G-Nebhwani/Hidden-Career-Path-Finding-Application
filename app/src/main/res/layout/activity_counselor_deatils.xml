@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".CounselorDeatilsActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="17dp"
+        android:background="@color/background"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/ccDetail_name"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Aman Arora"
+                android:textColor="@color/dark_Green"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/ccDetail_detail"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:text="BA Psychology,MA counselling Psychology"
+                android:textColor="@color/app_green"
+                android:textSize="12dp"
+                android:layout_margin="4dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/ccDetail_subdetail"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:layout_margin="4dp"
+                android:text="Psychology,Theropiest counselling Psychology"
+                android:textColor="@color/app_green"
+                android:textSize="12dp" />
+
+            <TextView
+                android:id="@+id/ccDetail_yearofExp"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:text="8 year of Experience"
+                android:layout_margin="4dp"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/black"
+                android:textSize="12dp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp">
+
+                <TextView
+                    android:id="@+id/ccDetail_ranting"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="4.0"
+                    android:layout_margin="4dp"
+                    android:textColor="@color/dark_Green"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_margin="4dp"
+                    android:src="@drawable/ic_star" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/ccDetail_Price"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:text="Rs 1000/hr"
+                android:textColor="@color/red"
+                android:textSize="14dp"
+                android:layout_marginTop="4dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/ccDetail_ProfilePic"
+            android:layout_width="150dp"
+            android:layout_height="170dp"
+            android:layout_margin="10dp"
+            android:src="@drawable/person" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="17dp"
+        android:layout_marginRight="17dp"
+        android:background="@drawable/curve_yellow_design"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/check"
+            android:scaleType="fitXY"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="25dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:padding="5dp"
+            android:text="Elite Verified"
+            android:textColor="@color/dark_Green"
+            android:layout_marginTop="15dp"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="55dp"
+            android:src="@drawable/line"
+            android:scaleType="fitXY"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            />
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_star"
+            android:scaleType="fitXY"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="15dp"
+            />
+        <TextView
+            android:layout_width="97dp"
+            android:layout_height="wrap_content"
+            android:text="97% People   Recommended"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            android:textStyle="bold"
+            android:textColor="@color/dark_Green"/>
+
+    </LinearLayout>
+    <TextView
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:gravity="start"
+        android:padding="5dp"
+        android:layout_marginLeft="15dp"
+        android:text="Review"
+        android:textColor="@color/app_green"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="320dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"/>
+
+    <Button
+        android:id="@+id/bookstot_btn"
+        android:layout_width="190dp"
+        android:layout_height="wrap_content"
+        android:text="Book Slot"
+        android:layout_marginTop="25dp"
+       android:layout_gravity="center"/>
+
+
+</LinearLayout>

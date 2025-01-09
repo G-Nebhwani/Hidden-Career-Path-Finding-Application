@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragment.MyAccountFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <ImageView
+            android:id="@+id/frgAcc_back"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_back"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp" />
+
+        <!-- Header Layout -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            >
+
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="45dp"
+                android:layout_height="55dp"
+                android:src="@drawable/userimg"
+                android:layout_marginLeft="12dp"
+                app:civ_border_color="@color/black"
+                android:layout_marginTop="15dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Mr Peter"
+                    android:padding="5dp"
+                    android:layout_marginTop="10dp"
+                    android:textSize="17dp"
+
+                    android:layout_marginLeft="15dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="mrpeter@xyz.com"
+                    android:padding="5dp"
+                    android:textSize="15dp"
+                    android:layout_marginLeft="15dp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- Scrollable Content -->
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <!-- Personal Information Section -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Personal Information"
+                    android:layout_marginLeft="@dimen/_30sdp"
+                    android:layout_marginRight="@dimen/_30sdp"
+                    android:layout_marginTop="15dp"
+                    android:padding="1dp"
+                    android:textStyle="bold"
+                    android:textSize="18dp" />
+
+                <!-- Name Input Field -->
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="@dimen/_30sdp"
+                    android:layout_marginRight="@dimen/_30sdp"
+                    app:boxStrokeColor="@color/app_green"
+                    app:hintTextColor="#FFA000">
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Name"
+                        android:drawableStart="@drawable/user"
+                        android:drawableEnd="@drawable/green_edit"
+                        android:drawablePadding="@dimen/_10sdp"
+                        android:inputType="text" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <!-- Mobile Number Field -->
+                <TextView
+                    android:id="@+id/MobileNo_edit_profile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="@dimen/_30sdp"
+                    android:layout_marginRight="@dimen/_30sdp"
+                    android:drawableStart="@drawable/green_phone"
+                    android:drawableEnd="@drawable/green_edit"
+                    android:drawablePadding="15dp"
+                    android:background="@drawable/textview_border"
+                    android:minHeight="40dp"
+                    android:padding="18dp"
+                    android:gravity="center_vertical"
+                    android:text="Mobile No"
+                    android:textColor="#51514D"
+                    android:textSize="16dp" />
+
+                <!-- Email Field -->
+                <TextView
+                    android:id="@+id/edit_emailid_profile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="@dimen/_30sdp"
+                    android:layout_marginRight="@dimen/_30sdp"
+                    android:background="@drawable/textview_border"
+                    android:drawableStart="@drawable/email_icon"
+                    android:drawableEnd="@drawable/green_edit"
+                    android:drawablePadding="15dp"
+                    android:minHeight="40dp"
+                    android:padding="18dp"
+                    android:gravity="center_vertical"
+                    android:text="Email-id"
+                    android:textColor="#51514D"
+                    android:textSize="16dp" />
+
+                <!-- Date of Birth Field -->
+                <TextView
+                    android:id="@+id/text_edit_profile_dob"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="@dimen/_30sdp"
+                    android:layout_marginRight="@dimen/_30sdp"
+                    android:drawableEnd="@drawable/ic_date"
+                    android:minHeight="40dp"
+                    android:background="@drawable/textview_border"
+                    android:padding="18dp"
+                    android:gravity="center_vertical"
+                    android:text="Date Of Birth"
+                    android:textColor="#51514D"
+                    android:textSize="16dp" />
+
+                <!-- Password Field -->
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="@dimen/_30sdp"
+                    android:layout_marginRight="@dimen/_30sdp"
+                    app:boxStrokeColor="#FFA000"
+                    app:hintTextColor="#FFA000">
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Password"
+                        android:drawableStart="@drawable/password"
+                        android:drawableEnd="@drawable/green_edit"
+                        android:drawablePadding="@dimen/_10sdp"
+                        android:inputType="textPassword" />
+                </com.google.android.material.textfield.TextInputLayout>
+                <!-- Manage Account Section -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Manage Account"
+                    android:padding="1dp"
+                    android:layout_marginLeft="@dimen/_30sdp"
+                    android:layout_marginRight="@dimen/_30sdp"
+                    android:layout_marginTop="15dp"
+                    android:textStyle="bold"
+                    android:textSize="18dp" />
+
+                <TextView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="@dimen/_30sdp"
+                    android:layout_marginRight="@dimen/_30sdp"
+                    android:background="@drawable/textview_border"
+                    android:drawableEnd="@drawable/arrow_right"
+                    android:drawablePadding="15dp"
+                    android:minHeight="40dp"
+                    android:padding="18dp"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center_vertical"
+                    android:text="Deactive and Delete Account"
+                    android:textColor="#51514D"
+                    android:textSize="16dp" />
+
+
+                <TextView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="@dimen/_30sdp"
+                    android:layout_marginRight="@dimen/_30sdp"
+                    android:drawableEnd="@drawable/arrow_right"
+                    android:drawablePadding="15dp"
+                    android:minHeight="40dp"
+                    android:background="@drawable/textview_border"
+                    android:padding="18dp"
+                    android:gravity="center_vertical"
+                    android:text="Privace &amp; Cookies"
+                    android:textColor="#51514D"
+                    android:textSize="16dp" />
+
+                <TextView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="@dimen/_30sdp"
+                    android:layout_marginRight="@dimen/_30sdp"
+                    android:drawableEnd="@drawable/arrow_right"
+                    android:drawablePadding="15dp"
+                    android:minHeight="40dp"
+                    android:padding="18dp"
+                    android:background="@drawable/textview_border"
+                    android:gravity="center_vertical"
+                    android:text="Sign out"
+                    android:textColor="#CD0C0C"
+                    android:textSize="16dp" />
+
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+</FrameLayout>

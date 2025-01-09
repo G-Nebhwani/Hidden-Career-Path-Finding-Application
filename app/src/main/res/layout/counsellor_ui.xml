@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    android:layout_margin="8dp"
+    android:backgroundTint="#F0F7F4"
+    app:cardCornerRadius="20dp"
+    app:cardElevation="4dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!-- Profile Image -->
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/c_profile_image"
+                android:layout_width="50dp"
+                android:layout_height="65dp"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="8dp"
+                android:background="?android:attr/selectableItemBackgroundBorderless"
+                android:contentDescription="Profile image"
+                android:scaleType="centerCrop"
+                android:src="@drawable/userimg" />
+
+            <LinearLayout
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:orientation="vertical">
+
+                <!-- Counselor's Name -->
+                <TextView
+                    android:id="@+id/counselor_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+                    android:text="Samira Pathak"
+                    android:textColor="#1E1E1E"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <!-- Experience and Specialization -->
+                <TextView
+                    android:id="@+id/counselor_details"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/counselor_name"
+                    android:text="Clinical Psychologist, Counseling Psychologist"
+                    android:textColor="#6B6B6B"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/counselor_Experience"
+                    android:layout_width="200dp"
+                    android:layout_height="25dp"
+                    android:layout_below="@id/counselor_name"
+                    android:paddingTop="3dp"
+                    android:text="12 Year of Experience"
+                    android:textColor="#6B6B6B"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <!-- View Details Button -->
+            <LinearLayout
+                android:layout_width="150dp"
+                android:layout_height="75dp"
+                android:background="@drawable/bottom_yellow_design"
+
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="15dp">
+                    <!-- Star Icon for Rating -->
+                    <ImageView
+                        android:id="@+id/star_icon"
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        android:layout_alignBottom="@id/counselor_rating"
+                        android:layout_marginEnd="4dp"
+                        android:layout_toStartOf="@id/counselor_rating"
+                        android:contentDescription="Star icon"
+                        android:src="@drawable/ic_star" />
+                    <!-- Rating -->
+                    <TextView
+                        android:id="@+id/counselor_rating"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginEnd="24dp"
+                        android:text="4.0"
+                        android:textColor="#6B6B6B"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <!-- Hourly Rate -->
+                <TextView
+                    android:id="@+id/counsellor_rate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/counselor_price"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="4dp"
+                    android:text="₹ 1000/hr"
+                    android:textColor="#D32F2F"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:padding="5sp">
+
+            <Button
+                android:id="@+id/view_details_button"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:text="View Details" />
+
+            <!-- Book Button -->
+            <Button
+                android:id="@+id/book_btn"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:text="Message"
+                android:textColor="#FFFFFF" />
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
+

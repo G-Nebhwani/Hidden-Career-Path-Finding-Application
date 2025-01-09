@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/basic_green"
+    android:orientation="vertical"
+    tools:context=".Admin.AdminProfileActivity">
+
+    <ImageView
+        android:id="@+id/AdminProfile_edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/edit"
+        android:layout_gravity="end"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="15dp"/>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/AdminProfile"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:src="@drawable/userimg"
+        android:layout_gravity="center"
+        android:layout_marginTop="25dp"
+        android:contentDescription="Profile" />
+
+    <TextView
+        android:id="@+id/Admin_tv_Name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="User Name"
+        android:layout_gravity="center"
+        android:textColor="@color/app_green"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/Admin_tv_Email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="Email :"
+        android:layout_marginStart="20dp"
+        android:textColor="@color/app_green"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+    <TextView
+        android:id="@+id/Admin_tv_UEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Xyz@Gamil.com"
+        android:layout_marginStart="20dp"
+        android:textColor="@color/app_green"
+        android:textSize="20sp"
+         />
+
+    <TextView
+        android:id="@+id/Admin_tv_Phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="Phone :"
+        android:layout_marginStart="20dp"
+        android:textColor="@color/app_green"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+    <TextView
+        android:id="@+id/Admin_tv_Uphone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="+91 xxxxxxxxxx"
+        android:layout_marginStart="20dp"
+        android:textColor="@color/app_green"
+        android:textSize="20sp"
+        />
+
+    <TextView
+        android:id="@+id/Admin_tv_adress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="Adress :"
+        android:layout_marginStart="20dp"
+        android:textColor="@color/app_green"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+    <TextView
+        android:id="@+id/Admin_tv_UAdress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="Xyz@Gamil.com"
+        android:layout_marginStart="20dp"
+        android:textColor="@color/app_green"
+        android:textSize="20sp"
+        />
+
+
+
+</LinearLayout>
